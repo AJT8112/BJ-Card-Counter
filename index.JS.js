@@ -4,7 +4,7 @@ index.JS
 //Card value will increase, decrease, or not change the count
 //Return if player should hold or bet based on current count value.
 
-var count = 0;
+let count = 0;
 
 //SWITCH to allow for card selection.
 function cc(card) {
@@ -14,14 +14,14 @@ function cc(card) {
         case 4:
         case 5:
         case 6:
-            count = count++;
+            count++;
             break;
         case 10:
         case "J":
         case "Q":
         case "K":
         case "A":
-            count = count--;
+            count--;
             break;
     }
 //IF count 0 or -, hold. ELSE, Bet.
